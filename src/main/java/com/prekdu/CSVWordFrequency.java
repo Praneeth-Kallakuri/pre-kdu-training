@@ -18,32 +18,33 @@ public class CSVWordFrequency {
     Map<String, Integer> wordCountMap = new HashMap<>();
 
     try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
-        String line;
-        while ((line = br.readLine()) != null) {
-            // Split line by non-word characters and loop through words
-            String[] words = line.split("\\W+");
-            for (String word : words) {
-                if (!word.isEmpty()) {
-                    wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
-                }
-            }
+      String line;
+      while ((line = br.readLine()) != null) {
+        // Split line by non-word characters and loop through words
+        String[] words = line.split("\\W+");
+        for (String word : words) {
+          if (!word.isEmpty()) {
+            wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
+          }
         }
+      }
 
-        // Use a priority queue to store words by their frequency
-        PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
-        pq.addAll(wordCountMap.entrySet());
+      // Use a priority queue to store words by their frequency
+      PriorityQueue<Map.Entry<String, Integer>> pq =
+          new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
+      pq.addAll(wordCountMap.entrySet());
 
-        // Print top 3 repeated words
-        System.out.println("Top 3 most repeated words:");
-        int count = 0;
-        while (!pq.isEmpty() && count < 3) {
-            Map.Entry<String, Integer> entry = pq.poll();
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-            count++;
-        }
+      // Print top 3 repeated words
+      System.out.println("Top 3 most repeated words:");
+      int count = 0;
+      while (!pq.isEmpty() && count < 3) {
+        Map.Entry<String, Integer> entry = pq.poll();
+        System.out.println(entry.getKey() + ": " + entry.getValue());
+        count++;
+      }
 
     } catch (IOException e) {
-        e.printStackTrace();
+      e.printStackTrace();
     }
   }
 }
