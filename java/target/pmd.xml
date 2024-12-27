@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="7.0.0" timestamp="2024-12-26T18:36:31.242">
+<file name="E:\pre-kdu-training\java\src\main\java\com\prekdu\CSVWordFrequency.java">
+<violation beginline="15" endline="15" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.prekdu" class="CSVWordFrequency" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+This utility class has a non-private constructor
+</violation>
+<violation beginline="33" endline="33" begincolumn="7" endcolumn="48" rule="LooseCoupling" ruleset="Best Practices" package="com.prekdu" class="CSVWordFrequency" method="main" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'PriorityQueue'; use the interface instead
+</violation>
+</file>
+<file name="E:\pre-kdu-training\java\src\main\java\com\prekdu\CollectionsExample.java">
+<violation beginline="10" endline="10" begincolumn="14" endcolumn="19" rule="UseUtilityClass" ruleset="Design" package="com.prekdu" class="CollectionsExample" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+This utility class has a non-private constructor
+</violation>
+<violation beginline="12" endline="12" begincolumn="13" endcolumn="20" rule="CloseResource" ruleset="Error Prone" package="com.prekdu" class="CollectionsExample" method="main" variable="scanner" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this Scanner object are closed after use
+</violation>
+<violation beginline="15" endline="15" begincolumn="5" endcolumn="22" rule="LooseCoupling" ruleset="Best Practices" package="com.prekdu" class="CollectionsExample" method="main" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="16" endline="16" begincolumn="5" endcolumn="20" rule="LooseCoupling" ruleset="Best Practices" package="com.prekdu" class="CollectionsExample" method="main" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'HashSet'; use the interface instead
+</violation>
+<violation beginline="17" endline="17" begincolumn="5" endcolumn="29" rule="LooseCoupling" ruleset="Best Practices" package="com.prekdu" class="CollectionsExample" method="main" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_bestpractices.html#loosecoupling" priority="3">
+Avoid using implementation types like 'HashMap'; use the interface instead
+</violation>
+</file>
+<file name="E:\pre-kdu-training\java\src\main\java\com\prekdu\StringComparison.java">
+<violation beginline="13" endline="13" begincolumn="8" endcolumn="13" rule="UseUtilityClass" ruleset="Design" package="com.prekdu" class="StringComparison" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+This utility class has a non-private constructor
+</violation>
+<violation beginline="15" endline="15" begincolumn="13" endcolumn="20" rule="CloseResource" ruleset="Error Prone" package="com.prekdu" class="StringComparison" method="main" variable="scanner" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.0.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this Scanner object are closed after use
+</violation>
+</file>
+</pmd>

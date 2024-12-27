@@ -1,11 +1,228 @@
-<!-- 
-Use headings and paragraphs to divide different sections of the website.
-Use tables to explain your educational qualification.
-Add images for your projects and yourself
-Use HTML lists to talk about your skills 
-Use Links to Navigate to your LinkedIn or GitHub profiles.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-Style the entire webpage according to your creativity
-Use all these ways of adding style to your webpage.
-Use CSS selectors when styling your lists and tables.
--->
+        header {
+            background-color: #53a8b6;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #79c2d0;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .about-section,
+        .education-section,
+        .skills-section,
+        .projects-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #79c2d0;
+            color: white;
+        }
+
+        .skills-section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .skills-section ul li {
+            margin: 5px 0;
+        }
+
+        .skills-section ul li:hover {
+            color: #79c2d0;
+        }
+
+        .projects-section img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #53a8b6;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Explore my projects, education, skills, and more!</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+</nav>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            I am an undergraduate looking for SDE jobs and have immense knowledge
+            in Data Science and Machine Learning. I am keen to learn emerging
+            technologies and apply my skills to real-time projects.
+        </p>
+        <p>
+            I am passionate and dedicated, constantly striving to expand my
+            expertise and adapt to new challenges. My versatile and adaptable
+            nature allows me to tackle various projects effectively. With a strong
+            determination to succeed, I am eager to contribute to innovative
+            solutions and make a significant impact. I look forward to collaborating
+            with like-minded professionals and gaining valuable experiences in the
+            field.
+        </p>
+        <img src="assets/images/My Photo.jpg" alt="Your photo" />
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td>Narayana College</td>
+                <td>2019 - 2021</td>
+            </tr>
+            <tr>
+                <td>Bachelor of Technology</td>
+                <td>Vellore Institute of Technology</td>
+                <td>2021 - 2025</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java & C++</li>
+            <li>Database Management</li>
+            <li>Version Control (Git & GitHub)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <article>
+            <h3>Project 1: 2048 Game</h3>
+            <img src="assets/images/project-17.jpg" alt="2048 Game" />
+            <p>
+                2048 is a popular puzzle game, where the user has to slide numbered
+                tiles on a 4x4 grid in order to merge them into a tile of a higher
+                value.
+            </p>
+        </article>
+
+        <article>
+            <h3>Online Book Store</h3>
+            <img src="assets/images/project-18.jpg" alt="Online Book Store" />
+            <p>
+                An Ecommerce Java Project to Purchase and Sell Books. A user-friendly
+                Online Bookstore project in which users can log in or register, view
+                the available books, select books along with their quantity, and buy
+                them.
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>Find me on:</p>
+    <a
+            href="https://www.linkedin.com/in/praneeth-kallakuri-96044724b/"
+            target="_blank"
+    >LinkedIn</a
+    >
+    |
+    <a href="https://github.com/Praneeth-Kallakuri" target="_blank">GitHub</a>
+</footer>
+</body>
+</html>
