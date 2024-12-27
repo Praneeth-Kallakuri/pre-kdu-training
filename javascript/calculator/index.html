@@ -12,3 +12,75 @@ Make sure the “Divide” button has an id of divide
 
 The IDs should match or else the tests will fail.
  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <script>
+        function add() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+            var result = num1 + num2;
+            alert("Result: " + result);
+        }
+
+        function subtract() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+            var result = num1 - num2;
+            alert("Result: " + result);
+        }
+
+        function multiply() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+            var result = num1 * num2;
+            alert("Result: " + result);
+        }
+
+        function divide() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers.");
+                return;
+            }
+            if (num2 === 0) {
+                alert("Cannot divide by zero.");
+                return;
+            }
+            var result = num1 / num2;
+            alert("Result: " + result);
+        }
+    </script>
+</head>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<label for="num1">Enter Number 1: </label>
+<input type="text" id="num1"><br><br>
+
+<label for="num2">Enter Number 2: </label>
+<input type="text" id="num2"><br><br>
+
+<button id="add" onclick="add()">Add</button>
+<button id="subtract" onclick="subtract()">Subtract</button>
+<button id="multiply" onclick="multiply()">Multiply</button>
+<button id="divide" onclick="divide()">Divide</button>
+
+</body>
+</html>

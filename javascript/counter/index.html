@@ -10,3 +10,34 @@ Make sure the “-” button has an id of decrement
 
 The IDs should match or else the tests will fail.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Counter</title>
+    <script>
+        let counter = 0;
+
+        function increment() {
+            counter++;
+            document.getElementById('counter-value').innerText = counter;
+        }
+
+        function decrement() {
+            counter--;
+            document.getElementById('counter-value').innerText = counter;
+        }
+    </script>
+</head>
+<body>
+
+<h2>Simple Counter</h2>
+
+<div id="counter-value">0</div><br><br>
+
+<button id="increment" onclick="increment()">+</button>
+<button id="decrement" onclick="decrement()">-</button>
+
+</body>
+</html>
