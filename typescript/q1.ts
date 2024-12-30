@@ -14,3 +14,19 @@
   Make sure to export the User type alias, Admin interface, and getProperty function by adding the export keyword in front of them.
   So that the code can be tested in the test file.
 */
+
+export type User = {
+    id: number;
+    name: string;
+    email: string;
+    role?: string;
+};
+
+export interface Admin extends User {
+    permissions: string[];
+}
+
+// Generic function to get a property value from an object
+export function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+}
